@@ -116,36 +116,16 @@
         <!-- cards -->
         <section class="row">
             <div class="col-sm-6">
-              <div class="card" id="cardhighlight">
-                <div class="card-body">
-                    <p class="card-text">Unresolved</p>
-                    <h5 class="card-title">60</h5>                  
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6" >
-              <div class="card" id="cardhighlight">
-                <div class="card-body">
-                    <p class="card-text" id="highlight">Overdue</p>
-                    <h5 class="card-title" id="highlight">16</h5>
-                </div>
-              </div>
+                <div class="card cardhighlight"></div>
             </div>
             <div class="col-sm-6">
-                <div class="card" id="cardhighlight">
-                  <div class="card-body">
-                    <p class="card-text">Open</p>
-                    <h5 class="card-title">43</h5>
-                  </div>
-                </div>
+                <div class="card cardhighlight"></div>
             </div>
             <div class="col-sm-6">
-                <div class="card" id="cardhighlight">
-                  <div class="card-body">
-                    <p class="card-text">On Hold</p>
-                    <h5 class="card-title">64</h5>
-                  </div>
-                </div>
+                <div class="card cardhighlight"></div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card cardhighlight"></div>
             </div>
               
         </section>
@@ -266,74 +246,29 @@
                     </div>
                     <div>
                         <div class="card" style="width: 25rem;" id="listgraph">
-                            <ul class="list-group list-group-flush" style="width: 25rem;">
-                              <li class="list-group-item">
-                                <p class="card-text">Resolved</p>
-                                <h5 class="card-title">449</h5>
-                              </li>
-                              <li class="list-group-item">
-                                <p class="card-text">Received</p>
-                                <h5 class="card-title">426</h5>
-                              </li>
-                              <li class="list-group-item">
-                                <p class="card-text">Average first response time</p>
-                                <h5 class="card-title">33m</h5>
-                              </li>
-                              <li class="list-group-item">
-                                <p class="card-text">Average response time</p>
-                                <h5 class="card-title">3h 8m</h5>
-                              </li>
-                              <li class="list-group-item">
-                                <p class="card-text">Resolution withiin SLA</p>
-                                <h5 class="card-title">94%</h5>
-                              </li>
-                        
-                            </ul>
+                            <ul class="list-group list-group-flush" style="width: 25rem;"></ul>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- tickets & tasks -->
+        
         <section id="last">
+            <!-- tickets & tasks -->
             <div class="card w-100 p-0">
-                <div class="card-header">
-                    <div>
-                        <h5>Unresolved tickets</h5>
-                        <p>Group: <span>Support</span></p>
-                    </div>
-                    <a href="#" class="view-more">View Details</a>
+                <div class="card-header">   
                 </div>
 
-                <ul class="list-group list-group-flush" style="width: 100%;">
-                    <li class="list-group-item">
-                      <h5 class="ticket-name">Waiting on Feature Request</h5>
-                      <p class="ticket-num">4238</p>
-                    </li>
-                    <li class="list-group-item">
-                      <h5 class="ticket-name">Awaiting Customer Response</h5>
-                      <p class="ticket-num">1005</p>
-                    </li>
-                    <li class="list-group-item">
-                      <h5 class="ticket-name">Awaiting Developer Fix</h5>
-                      <p class="ticket-num">914</p>
-                    </li>
-                    <li class="list-group-item">
-                      <h5 class="ticket-name">Pending</h5>
-                      <p class="ticket-num">281</p>
-                    </li>                 
-                </ul>
+                <ul class="list-group list-group-flush" style="width: 100%;" id="tickets"></ul>
             </div>
+
+            <!-- tasks section -->
             <div class="card w-100 p-0">
-                <div class="card-header">
-                    <div>
-                        <h5>Tasks</h5>
-                        <p>Today</p>
-                    </div>
-                    <a href="#" class="view-more">View All</a>
+                <div class="card-header" id="taskheader">
+                    
                 </div>
 
-                <ul class="list-group list-group-flush" style="width: 100%;">
+                <ul class="list-group list-group-flush" style="width: 100%;" id="tasksul">
                     <li class="list-group-item">
                         <h5 class="ticket-name deactivated-task">Create new task</h5>
                         <a href="#">
@@ -380,6 +315,7 @@
     
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

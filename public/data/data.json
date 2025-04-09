@@ -1,0 +1,61 @@
+{
+
+    "cards": [
+      { "cardslabel": "Unresolved", "cardsvalue": 60 }, 
+      { "cardslabel": "Overdue", "cardsvalue": 16 },
+      { "cardslabel": "Open", "cardsvalue": 43 },
+      { "cardslabel": "On Hold", "cardsvalue": 64 }
+    ],
+
+    "graphStats": [
+        { "graphlabel": "Resolved", "graphvalue": 449 },
+        { "graphlabel": "Received", "graphvalue": 426 },
+        { "graphlabel": "Average first response time", "graphvalue": "33m" },
+        { "graphlabel": "Average response time", "graphvalue": "3h 8m" },
+        { "graphlabel": "Resolution within SLA", "graphvalue": "94%" }
+    ],
+
+   "header": {
+        "title": "Unresolved tickets",
+        "group": "Support",
+        "linkText": "View Details",
+        "linkURL": "#"
+    },
+    
+    "tickets": [
+        { "name": "Waiting on Feature Request", "number": "4238" },
+        { "name": "Awaiting Customer Response", "number": "1005" },
+        { "name": "Awaiting Developer Fix", "number": "914" },
+        { "name": "Pending", "number": "281" }
+    ],
+
+    "headertasks": {
+        "title": "Tasks",
+        "description": "Today",
+        "linkText": "View All",
+        "linkURL": "#"
+    },
+    "tasks": [
+        {
+            "name": "Create new task",
+            "status": "deactivated",
+            "badge": null
+        },
+        {
+            "name": "Finish ticket update",
+            "status": "active",
+            "badge": "Urgent"
+        },
+        {
+            "name": "Create new ticket example",
+            "status": "active",
+            "badge": "New"
+        },
+        {
+            "name": "Update ticket report",
+            "status": "completed",
+            "badge": "Default"
+        }
+    ]
+}
+  
