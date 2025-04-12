@@ -79,28 +79,6 @@ async function getRecords() {
         <a href="${result.headertasks.linkURL}" class="view-more">${result.headertasks.linkText}</a>
     `;
     taskHeader.innerHTML = taskContent;
-
-    result.tasks.forEach(task => {
-
-        let taskItem = document.createElement('li');
-        taskItem.classList.add('list-group-item'); 
-
-  
-        taskItem.innerHTML = `
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                label class="form-check-label" for="flexCheckDefault">
-                    ${tasks.name}
-                </label>
-            </div>
-            <span class="badge text-bg-success text-white">${tasks.badge}</span>
-        `;
-    
- 
-        taskList.appendChild(taskItem);
-  });
-
-
     
 }
 
